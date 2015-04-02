@@ -401,8 +401,12 @@ public class NetHander {
         int ret = 2;
         String str = "";
 //        String url = "http://192.168.231.130/1/HttpService/TestServlet.ashx";
-        String url = "http://192.168.231.130/1/HttpService/QuerypyServlet.ashx";
+        String url = "http://192.168.231.130/GYMITV/iptv/account/query.py";
+//        String url = "http://192.168.231.130/GYMITV/iptv/account/query.py?accountStb=0571000448&productCode=P10119";
+//        String url = "http://122.224.212.79:8080/GYMITV/iptv/order/order.py?accountStb=0571000441&productCode=P10119&propsCode=DJ10648";
 //        url = put(url, "testStr", testStr, false);
+//        url = put(url, "accountStb", 0571000448, false);
+//        url = put(url, "productCode", P10119, false);
         str = doSend_(url);
         System.out.println(str);
         JSONArray jsonArray = new JSONArray(str);
